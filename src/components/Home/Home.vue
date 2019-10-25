@@ -18,5 +18,7 @@
 </script>
 
 <style scoped>
-
+    main {
+        background-color: #f5f8f9;
+    }
 </style>

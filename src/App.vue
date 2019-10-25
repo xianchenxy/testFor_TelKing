@@ -21,5 +21,11 @@
 </script>
 
 <style>
+    html {
+        font-size: 62.5%;
+    }
 
+    body {
+        font-size: 100%;
+    }
 </style>
