@@ -18,7 +18,6 @@
 
 <style scoped>
     header {
-        padding: 0 150px;
         font-size: 1.4rem;
         text-align: center;
         background-color: #fff;

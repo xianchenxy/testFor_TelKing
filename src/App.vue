@@ -26,6 +26,9 @@
     }
 
     body {
+        padding: 0 150px;
         font-size: 100%;
+        background-color: #f5f8f9;
+        color: #262b2e;
     }
 </style>
