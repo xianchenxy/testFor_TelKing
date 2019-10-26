@@ -19,8 +19,9 @@
 
 <style scoped>
     main {
-        max-width: 1140px;
-        margin: 0 auto;
+        max-width: 792px;
+        padding: 0 104px;
+        margin: 45px auto;
         /*background-color: #ccc;*/
     }
 </style>

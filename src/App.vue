@@ -26,9 +26,14 @@
     }
 
     body {
-        padding: 0 150px;
         font-size: 100%;
         background-color: #f5f8f9;
         color: #262b2e;
+    }
+
+    div#app {
+        /*max-width: 950px;*/
+        /*padding: 0 125px;*/
+        /*margin: 0 auto;*/
     }
 </style>

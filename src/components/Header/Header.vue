@@ -18,24 +18,24 @@
 
 <style scoped>
     header {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         text-align: center;
         background-color: #fff;
         color: #fff;
     }
 
     .container {
-        max-width: 1140px;
+        max-width: 792px;
         margin: 0 auto;
-        padding: 30px 0;
+        padding: 15px 104px;
         overflow: hidden;
     }
 
     .logo {
         float: left;
-        width: 107px;
-        height: 32px;
-        line-height: 32px;
+        width: 75px;
+        height: 23px;
+        line-height: 23px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px;
@@ -51,8 +51,8 @@
 
     .sys-btn > span {
         display: inline-block;
-        width: 20px;
-        height: 20px;
+        width: 14px;
+        height: 14px;
         background: url("../../assets/icon.png");
         -webkit-background-size: cover;
         background-size: cover;
@@ -60,19 +60,19 @@
     }
 
     .sys-btn > span:first-of-type {
-        margin-right: 20px;
+        margin-right: 14px;
     }
 
     .sys-btn > span:last-of-type {
         background-position-x: -50%;
-        margin-right: 40px;
+        margin-right: 20px;
     }
 
     .log-out {
         float: right;
-        width: 112px;
-        height: 42px;
-        line-height: 42px;
+        width: 79px;
+        height: 30px;
+        line-height: 30px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px;

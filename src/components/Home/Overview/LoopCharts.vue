@@ -73,8 +73,10 @@
 <style scoped>
     .loop-chart {
         position: relative;
-        width: 539px;
-        height: 267px;
+        float: left;
+        width: 376px;
+        height: 186px;
+        border: 7px solid #fff;
         overflow: hidden;
     }
 
@@ -90,8 +92,8 @@
 
     ul.charts li {
         float: left;
-        width: 539px;
-        height: 267px;
+        width: 450px;
+        height: 224px;
         -webkit-background-size: cover !important;
         background-size: cover !important;
     }
@@ -102,9 +104,9 @@
 
     aside > span {
         display: inline-block;
-        width: 25px;
-        height: 40px;
-        line-height: 40px;
+        width: 20px;
+        height: 32px;
+        line-height: 32px;
         top: 50%;
         -webkit-transform: translate(0, -50%);
         -moz-transform: translate(0, -50%);
@@ -117,7 +119,7 @@
         -o-transition: all 400ms;
         transition: all 400ms;
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.6rem;
         color: #fff;
         background-color: #03050d;
         cursor: pointer;
@@ -150,9 +152,9 @@
 
     ul.charts-index > li {
         float: left;
-        width: 10px;
-        height: 12px;
-        margin: 0 5px;
+        width: 8px;
+        height: 10px;
+        margin: 0 4px;
         -webkit-transition: height 400ms;
         -moz-transition: height 400ms;
         -ms-transition: height 400ms;
@@ -163,10 +165,10 @@
     }
 
     ul.charts-index > li:hover {
-        height: 20px;
+        height: 16px;
     }
 
     li.cur {
-        height: 20px !important;
+        height: 16px !important;
     }
 </style>

@@ -23,8 +23,8 @@
 </script>
 
 <style scoped>
-    .overview {
-        margin-top: 90px;
-        margin-bottom: 50px;
+    section  {
+        margin-top: 35px;
+        overflow: hidden;
     }
 </style>
