@@ -71,18 +71,23 @@
 </script>
 
 <style scoped>
+    .loop-chart,
+    ul.charts li {
+        float: left;
+        width: 54rem;
+        height: 26.8rem;
+    }
+
     .loop-chart {
         position: relative;
-        float: left;
-        width: 376px;
-        height: 186px;
-        border: 7px solid #fff;
+        margin-top: 5rem;
+        border: 1rem solid #fff;
         overflow: hidden;
     }
 
     ul.charts {
         position: absolute;
-        width: 10000px;
+        width: 1000rem;
         -webkit-transition: all 1s;
         -moz-transition: all 1s;
         -ms-transition: all 1s;
@@ -91,9 +96,6 @@
     }
 
     ul.charts li {
-        float: left;
-        width: 450px;
-        height: 224px;
         -webkit-background-size: cover !important;
         background-size: cover !important;
     }
@@ -104,9 +106,9 @@
 
     aside > span {
         display: inline-block;
-        width: 20px;
-        height: 32px;
-        line-height: 32px;
+        width: 2.5rem;
+        height: 3.5rem;
+        line-height: 3.5rem;
         top: 50%;
         -webkit-transform: translate(0, -50%);
         -moz-transform: translate(0, -50%);
@@ -127,12 +129,12 @@
 
     .to-left {
         left: 0;
-        margin-left: 5px;
+        margin-left: .5rem;
     }
 
     .to-right {
         right: 0;
-        margin-right: 5px;
+        margin-right: .5rem;
     }
 
     aside > span:hover {
@@ -141,7 +143,7 @@
 
     ul.charts-index {
         left: 50%;
-        bottom: 5px;
+        bottom: .5rem;
         -webkit-transform: translate(-50%, 0) rotate(180deg);
         -moz-transform: translate(-50%, 0) rotate(180deg);
         -ms-transform: translate(-50%, 0) rotate(180deg);
@@ -152,9 +154,9 @@
 
     ul.charts-index > li {
         float: left;
-        width: 8px;
-        height: 10px;
-        margin: 0 4px;
+        width: .8rem;
+        height: 1rem;
+        margin: 0 .4rem;
         -webkit-transition: height 400ms;
         -moz-transition: height 400ms;
         -ms-transition: height 400ms;
@@ -165,10 +167,10 @@
     }
 
     ul.charts-index > li:hover {
-        height: 16px;
+        height: 1.4rem;
     }
 
     li.cur {
-        height: 16px !important;
+        height: 1.4rem !important;
     }
 </style>

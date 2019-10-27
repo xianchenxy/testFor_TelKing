@@ -18,68 +18,57 @@
 
 <style scoped>
     header {
+        top: 0;
+        position: fixed;
+        width: 100%;
         font-size: 1.2rem;
         text-align: center;
         background-color: #fff;
         color: #fff;
+        z-index: 999;
     }
 
     .container {
-        max-width: 792px;
+        max-width: 114rem;
         margin: 0 auto;
-        padding: 15px 104px;
+        /*padding: 3rem 15rem;*/
+        padding: 3rem 0;
         overflow: hidden;
     }
 
-    .logo {
-        float: left;
-        width: 75px;
-        height: 23px;
-        line-height: 23px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-        background-color: #f92525;
-        cursor: pointer;
-    }
-
-    .logo:hover {
-        opacity: .8;
-    }
-
     .sys-btn {
-        height: 20px;
-        margin-top: 11px;
+        height: 2rem;
+        margin-top: 1.1rem;
         float: right;
     }
 
     .sys-btn > span {
         display: inline-block;
-        width: 14px;
-        height: 14px;
-        background: url("../../assets/icon.png");
+        width: 2rem;
+        height: 2rem;
+        background: url("../../assets/img/icon.png");
         -webkit-background-size: cover;
         background-size: cover;
         cursor: pointer;
     }
 
     .sys-btn > span:first-of-type {
-        margin-right: 14px;
+        margin-right: 1.4rem;
     }
 
     .sys-btn > span:last-of-type {
         background-position-x: -50%;
-        margin-right: 20px;
+        margin-right: 2rem;
     }
 
     .log-out {
         float: right;
-        width: 79px;
-        height: 30px;
-        line-height: 30px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
+        width: 11.2rem;
+        height: 4.2rem;
+        line-height: 4.2rem;
+        -webkit-border-radius: .5rem;
+        -moz-border-radius: .5rem;
+        border-radius: .5rem;
         background-color: #f92525;
         cursor: pointer;
     }

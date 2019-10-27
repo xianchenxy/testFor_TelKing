@@ -41,16 +41,17 @@
 <style scoped>
     .req-status {
         float: right;
-        width: 390px;
-        height: 200px;
+        width: 56rem;
+        height: 28.8rem;
+        margin-top: 5rem;
         background-color: #fff;
         overflow: hidden;
     }
 
     .title {
-        padding: 20px 36px;
-        height: 34px;
-        border-bottom: 1px solid #eaeaea;
+        padding: 4rem 5rem 2.9rem;
+        border-bottom: 2px solid #f5f8f9;
+        overflow: hidden;
     }
 
     .title-name {
@@ -61,9 +62,9 @@
 
     .title-btn {
         float: right;
-        padding: 7px 10px;
+        padding: 1.3rem 2rem;
         font-size: 1.3rem;
-        border: 1px solid #eaeaea;
+        border: 2px solid #eaeaea;
         cursor: pointer;
     }
 
@@ -72,50 +73,59 @@
     }
 
     .wrapper {
-        padding: 0 36px;
+        padding: 0 5rem;
         overflow: hidden;
         /*background-color: lightskyblue;*/
     }
 
     .wrapper ul {
         font-size: 1.3rem;
-        margin-bottom: 7px;
+        margin-bottom: 1.5rem;
         /*background-color: lavender;*/
         overflow: hidden;
+    }
+
+    .wrapper ul > li {
+        float: left;
+        padding: 1rem 0;
+    }
+
+    .wrapper ul > li:first-of-type {
+        width: 7.2rem;
+    }
+
+    .wrapper ul > li:last-of-type {
+        float: right;
+        padding: 1rem 1.2rem;
+        background-color: #5dd054;
+        color: #fff;
+    }
+
+    .wrap-title {
+        position: relative;
+        padding-top: 1.5rem;
+        background-color: #fff;
+        z-index: 1;
     }
 
     .wrapper .wrap-title > ul:first-of-type {
         font-size: 1.4rem;
     }
 
-    .wrapper ul > li {
-        float: left;
-        padding: 6px;
+    .wrapper .wrap-title > ul > li {
+        font-weight: bold;
     }
 
-    .wrapper ul > li:first-of-type {
-        width: 72px;
-    }
-
-    .wrapper ul > li:last-of-type {
-        float: right;
-    }
-
-    .wrap-title {
-        position: relative;
-        padding-top: 16px;
-        z-index: 1;
+    .wrapper .wrap-title > ul > li:last-of-type {
+        font-weight: normal;
         background-color: #fff;
-    }
-
-    .wrapper .wrap-body > ul > li:last-of-type {
-        background-color: #5dd054;
-        color: #fff;
+        color: #000;
     }
 
     .wrap-body {
         position: relative;
         top: 0;
+        /*top: -100px;*/
         -webkit-transition: top 1s;
         -moz-transition: top 1s;
         -ms-transition: top 1s;

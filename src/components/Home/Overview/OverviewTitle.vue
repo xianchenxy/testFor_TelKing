@@ -1,10 +1,8 @@
 <template>
     <section>
-        <div class="ov-info">
-            <h1>Audience Overview</h1>
-            <p>Roseville, CA</p>
-        </div>
+        <h1>Audience Overview</h1>
         <nav class="ov-btn">
+            <p>Roseville, CA</p>
             <ul @click="toFocus($event)" ref="btns">
                 <li v-for="(btn, ind) in btnData" :class="{'cur': cur === ind}">{{ btn }}</li>
             </ul>
@@ -35,29 +33,18 @@
 </script>
 
 <style scoped>
-    section {
-        overflow: hidden;
-        /*background: lightblue;*/
-    }
-
-    .ov-info {
-        float: left;
-    }
-
     h1 {
         font-size: 3rem;
     }
 
     p {
+        float: left;
         font-size: 1.5rem;
     }
 
     .ov-btn {
-        float: right;
-        position: relative;
-        top: 40px;
+        width: 100%;
         overflow: hidden;
-        /*background: lavender;*/
     }
 
     nav {
@@ -65,14 +52,23 @@
         font-size: 1.3rem;
     }
 
+    ul {
+        float: right;
+        font-weight: bold;
+    }
+
     li {
         float: left;
-        margin-right: 35px;
+        margin-right: 3.5rem;
         cursor: pointer;
+    }
+
+    li:hover {
+        color: #f40;
     }
 
     .cur {
         color: #f40;
-        border-bottom: 2px solid #ccc;
+        border-bottom: .2rem solid #ccc;
     }
 </style>

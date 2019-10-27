@@ -31,47 +31,35 @@
 
 <style scoped>
     footer {
-        padding: 50px 30px 80px;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        /*padding: 8rem 15rem;*/
+        padding: 8rem 0;
         background-color: #202124;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
         color: #fff;
+        z-index: 1;
     }
 
     aside {
         position: relative;
-        max-width: 792px;
-        padding: 0 44px 0 100px;
+        max-width: 114rem;
         margin: 0 auto;
         font-size: 1.3rem;
         /*background-color: lightskyblue;*/
     }
 
-    aside nav:not(:first-of-type) {
+    aside nav {
         display: inline-block;
-        width: 20%;
+        width: 16.5%;
     }
 
+    aside nav:first-of-type,
     aside nav:last-of-type {
         vertical-align: top;
-    }
-
-    .logo {
-        left: 0;
-        position: absolute;
-        width: 75px;
-        height: 23px;
-        margin: 5px 0;
-        line-height: 23px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-        text-align: center;
-        font-size: 1.2rem;
-        background-color: #f92525;
-        cursor: pointer;
-    }
-
-    .logo:hover {
-        opacity: .8;
     }
 
     ul {
@@ -79,8 +67,12 @@
     }
 
     ul > li {
-        margin: 5px 0;
+        margin-bottom: 1.9rem;
         cursor: pointer;
+    }
+
+    aside nav > ul > li:last-of-type {
+        margin-bottom: 0;
     }
 
     li:hover {
