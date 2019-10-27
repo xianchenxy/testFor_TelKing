@@ -43,6 +43,10 @@
         cursor: pointer;
     }
 
+    .logo:hover {
+        opacity: .8;
+    }
+
     .sys-btn {
         height: 20px;
         margin-top: 11px;
@@ -80,4 +84,7 @@
         cursor: pointer;
     }
 
+    .log-out:hover {
+        opacity: .8;
+    }
 </style>
