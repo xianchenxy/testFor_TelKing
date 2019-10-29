@@ -7,7 +7,6 @@
         props: ['pie_data'],
         watch: {
             pie_data() {
-                console.log(series_pie);
                 const pie_echarts = echarts.init(document.getElementsByClassName('ec-pie')[0]);
                 const series_pie = [];
                 for (let i in this.pie_data.xAxis) {
@@ -16,7 +15,7 @@
                         value: this.pie_data.series[i]
                     })
                 }
-                console.log(series_pie);
+                // console.log(series_pie);
                 const options = {
                     title: {
                         text: '饼状图数据展示',

@@ -4,10 +4,10 @@
             <li v-for="(pic, ind) in pics" :style="initStyle(pic)" :title="'轮播图' + (ind + 1)"></li>
         </ul>
         <aside>
-            <span class="to-left" @click="updChartIndex('-1')"><</span>
-            <span class="to-right" @click="updChartIndex('1')">></span>
+            <span class="to-left" @click="updChartIndex('-1', true)"><</span>
+            <span class="to-right" @click="updChartIndex('1', true)">></span>
             <ul class="charts-index">
-                <li v-for="ind in pics.length" @click="updChartIndex(ind)"
+                <li v-for="ind in pics.length" @click="updChartIndex(ind, true)"
                     :class="{'cur': (pics.length - nowInd) === ind}"></li>
             </ul>
         </aside>
@@ -27,7 +27,9 @@
                 ],
                 nowInd: 0,
                 step: '',
-                chart_box: null
+                chart_box: null,
+                timer: null,
+                chartTime: 3000,   //轮播间隔
             }
         },
         computed: {
@@ -41,7 +43,14 @@
             }
         },
         methods: {
-            updChartIndex(ind) {
+            updChartIndex(ind, isUserClick) {
+                //为避免轮播图的定时滚动和用户行为点击造成【多次点击】的现象，
+                //每次用户行为点击后，需要重启定时器
+                if (isUserClick) {
+                    this.closeLoopChart(this);
+                    this.startLoopChart(this);
+                }
+
                 let nowInd = this.nowInd; //此处是为了避免直接更改data值引起的不必要的更新
                 const toIndex = parseFloat(ind);
                 if (toIndex !== toIndex) {
@@ -65,7 +74,30 @@
                 }
                 // console.log(nowInd);
                 this.nowInd = nowInd;
+            },
+            startLoopChart(vm) {
+                if (!vm || !vm._isVue)  //为空 or 非Vue实例
+                    throw new Error('the param requires a Vue Instance!');
+                this.timer = setInterval(function () {
+                    // console.log('loop');
+                    vm.updChartIndex('1');  //不可用数字1，会被判以为点击的是索引方块
+                }, this.chartTime);
+            },
+            closeLoopChart(vm) {
+                clearInterval(vm.timer);
             }
+        },
+        mounted() {
+            const _vm = this;
+            //开启定时轮播
+            this.startLoopChart(_vm);
+            //鼠标悬停时关闭定时器，离开则重启
+            this.$refs['chart_box'].addEventListener('mouseenter', () => {
+                _vm.closeLoopChart(_vm)
+            }, false);
+            this.$refs['chart_box'].addEventListener('mouseleave', () => {
+                _vm.startLoopChart(_vm);
+            }, false);
         }
     }
 </script>

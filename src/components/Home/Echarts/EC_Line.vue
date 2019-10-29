@@ -31,7 +31,7 @@
             });
             promise.then(data => {
                 this.ec_line_data = data.data;
-                console.log(this.ec_line_data);
+                // console.log(this.ec_line_data);
                 const line_echarts = echarts.init(document.getElementsByClassName('ec-line')[0]);
                 const options = {
                     title: {
