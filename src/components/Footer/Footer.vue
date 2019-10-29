@@ -31,17 +31,14 @@
 
 <style scoped>
     footer {
-        bottom: 0;
-        position: fixed;
         width: 100%;
-        /*padding: 8rem 15rem;*/
+        margin-top: 5.3rem;
         padding: 8rem 0;
         background-color: #202124;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         color: #fff;
-        z-index: 1;
     }
 
     aside {
